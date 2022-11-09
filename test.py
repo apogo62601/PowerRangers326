@@ -1,5 +1,5 @@
 
 def hello():
   print("hello")
-  print("Goodbye')
+  print("Goodbye")
   print("INST326")

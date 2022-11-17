@@ -66,5 +66,14 @@ Args:
 """
 
 
-def With_Conditions():
+def With_Conditions(filepath, condition1):
 # METHOD: Open text file with prompts and then put conditions in based on user picks
+"""
+Args:
+  path(str): file path to text prompts
+  condition1(str): condition user picks
+
+Side effects:
+  Prints to stdout
+
+"""

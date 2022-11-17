@@ -53,9 +53,16 @@ RaiseError:
 
 
 
-def Set_Story_Intersections():
+def Set_Story_Intersections(person_day):
 # METHOD: Checking if story choices have the same text-outcome and/or points amount
-"""
+""" Check overall user route to determine if a mojority of choices were good/bad to determine how the day was
+Args:
+  person_day (str): description of the persons day
+ 
+ Returns: 
+  print statement regarding the quality of their day
+  
+  
 """
 
 

@@ -10,7 +10,7 @@ Attributes:
 self.read(): reads column from dataset in pandas
 
 Returns:
-Returns user point value
+  Returns user point value
 
 
 """
@@ -18,11 +18,20 @@ Returns user point value
 def __Repr__():
 # METHOD: __Repr__ for formal strings
 """Using magic method to formally represent
+
+Returns: 
+  str: string representation
 """
 
-def Counter():
+def Counter(points, point_change):
 # METHOD: Counter for Points (add/subtract)
-"""
+""" Counts the amount of points the user receives.
+Args:
+  points(int): Amount of points the user has.
+  point_change(int): Amount of points the user gains/ loses.
+
+Returns:
+  The sum of points that is awarded to the user.
 """
 
 

@@ -2,9 +2,17 @@ if __name__ == "__main__":
 
 def Pandas_Points():
 # METHOD: Reading Points File Data
-"""Using PANDAS to organize and pull the points data
-# import pandas as pd
-# df = pd.read_csv('file.csv')
+"""
+Args:
+csv_file(str): csv file
+
+Attributes:
+self.read(): reads column from dataset in pandas
+
+Returns:
+Returns user point value
+
+
 """
 
 def __Repr__():

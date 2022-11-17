@@ -4,10 +4,10 @@ def Pandas_Points():
 # METHOD: Reading Points File Data
 """
 Args:
-csv_file(str): csv file
+  csv_file(str): csv file
 
 Attributes:
-self.read(): reads column from dataset in pandas
+  self.read(): reads column from dataset in pandas
 
 Returns:
   Returns user point value
@@ -35,9 +35,20 @@ Returns:
 """
 
 
-def Conditional_Choices():
+def Conditional_Choices(Storychoice1, Storychoice2, Storychoice = None):
 # METHOD: Printing prompted if storychoice#1 or storychoice#2 is chosen
-"""
+"""Checks between routes that are choosable and adds to history list of choices made
+Args:
+  Storychoice1 (str): A user route option
+  Storychoice2 (str): Another user route option
+  Storychoice3 (str): Optional parameter for certain choice prompts
+  
+Attributes:
+  self.list (list): Storage of previous choices made
+
+RaiseError:
+  Error if chosen user option is not valid. Loops back to prior options
+
 """
 
 

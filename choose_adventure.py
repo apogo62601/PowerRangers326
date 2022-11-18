@@ -10,7 +10,7 @@ Attributes:
   self.read(): reads column from dataset in pandas
 
 Returns:
-  Returns user point value
+  Returns user point value as an int
 
 
 """
@@ -31,7 +31,7 @@ Args:
   point_change(int): Amount of points the user gains/ loses.
 
 Returns:
-  The sum of points that is awarded to the user.
+  The sum of points that is awarded to the user as an int.
 """
 
 
@@ -60,14 +60,14 @@ Args:
   person_day (str): description of the persons day
  
  Returns: 
-  print statement regarding the quality of their day
+  print statement regarding the quality of their day as a string
   
   
 """
 
 
 def With_Conditions(filepath, condition1):
-# METHOD: Open text file with prompts and then put conditions in based on user picks
+# METHOD: Open text file (.txt) with prompts and then put conditions in based on user picks
 """
 Args:
   path(str): file path to text prompts

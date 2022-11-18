@@ -10,7 +10,7 @@ Attributes:
   self.read(): reads column from dataset in pandas
 
 Returns:
-  Returns user point value
+  Returns int user point value
 
 
 """
@@ -31,7 +31,7 @@ Args:
   point_change(int): Amount of points the user gains/ loses.
 
 Returns:
-  The sum of points that is awarded to the user.
+  The sum of points that is awarded to the user as an int.
 """
 
 
@@ -60,7 +60,7 @@ Args:
   person_day (str): description of the persons day
  
  Returns: 
-  print statement regarding the quality of their day
+  print statement (str) regarding the quality of their day
   
   
 """

@@ -35,7 +35,7 @@ Returns:
 
 def Counter(points, point_change):
 # METHOD: Counter for Points (add/subtract)
-# Justin
+# Abel
 """ Counts the amount of points the user receives.
 Args:
   points(int): Amount of points the user has.
@@ -67,7 +67,7 @@ RaiseError:
 
 def Set_Story_Intersections(person_day):
 # METHOD: Checking if story choices have the same text-outcome and/or points amount
-# Abel
+# Justin
 """ Check overall user route to determine if a mojority of choices were good/bad to determine how the day was
 Args:
   person_day (str): description of the persons day

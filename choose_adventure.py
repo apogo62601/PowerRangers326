@@ -9,6 +9,7 @@ if __name__ == "__main__":
   
 def Pandas_Points():
 # METHOD: Reading Points File Data
+# Everyone
 """
 Args:
   csv_file(str): csv file
@@ -33,8 +34,8 @@ Returns:
 """
 
 def Counter(points, point_change):
- #Abel
 # METHOD: Counter for Points (add/subtract)
+# Justin
 """ Counts the amount of points the user receives.
 Args:
   points(int): Amount of points the user has.
@@ -47,6 +48,7 @@ Returns:
 
 def Conditional_Choices(Storychoice1, Storychoice2, Storychoice = None):
 # METHOD: Printing prompted if storychoice#1 or storychoice#2 is chosen
+# Aelina
 """Checks between routes that are choosable and adds to history list of choices made
 Args:
   Storychoice1 (str): A user route option
@@ -65,6 +67,7 @@ RaiseError:
 
 def Set_Story_Intersections(person_day):
 # METHOD: Checking if story choices have the same text-outcome and/or points amount
+# Abel
 """ Check overall user route to determine if a mojority of choices were good/bad to determine how the day was
 Args:
   person_day (str): description of the persons day
@@ -78,6 +81,7 @@ Args:
 
 def With_Conditions(filepath, condition1):
 # METHOD: Open text file (.txt) with prompts and then put conditions in based on user picks
+# Akash
 """
 Args:
   path(str): file path to text prompts

@@ -1,5 +1,12 @@
 if __name__ == "__main__":
 
+ class Choices:
+  
+   def __init__(self):
+      pass
+  
+  
+  
 def Pandas_Points():
 # METHOD: Reading Points File Data
 """
@@ -7,15 +14,17 @@ Args:
   csv_file(str): csv file
 
 Attributes:
-  self.read(): reads column from dataset in pandas
-
+  
 Returns:
   Returns user point value as an int
-
-
 """
+  df = pd.read_csv("csv_file.csv")
+  
+  returns df
 
-def __Repr__():
+
+
+def __repr__():
 # METHOD: __Repr__ for formal strings
 """Using magic method to formally represent
 

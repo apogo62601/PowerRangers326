@@ -5,8 +5,8 @@ def Pandas_Points():
 # METHOD: Reading Points File Data
 """Using PANDAS to organize and pull the points data
 
-# import pandas as pd
-# df = pd.read_csv('file.csv')
+import pandas as pd
+df = pd.read_csv("game.csv")
 
 """
 

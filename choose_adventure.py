@@ -1,5 +1,10 @@
 import pandas as pd
 
+class Player:
+  def __init__(self,name):
+   self.name = name
+ 
+  
 if __name__ == "__main__":
 
  class Choices:

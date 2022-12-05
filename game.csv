@@ -1,1 +1,21 @@
-:)
+sleep_in = 15
+not_sleep_in = 1-(sleep_in)
+
+take_shower = 5
+not_take_shower = 1-(take_shower)
+
+on_time = 10
+not_on_time = 1-(on_time)
+
+skip = -85
+class_late = 5
+hang_w_friends = -5
+do_hw = 10
+
+gym = 5
+go_out_after_hw = 5
+go_out_no_hw = -5
+sleep = 15
+stay_out = -15
+sober = 15
+intoxicated = 1-(sober)

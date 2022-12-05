@@ -19,7 +19,7 @@ Attributes:
 Returns:
   Returns user point value as an int
 """
-  df = pd.read_csv("csv_file.csv")
+  df = pd.read_csv("game.csv")
   
   returns df
 

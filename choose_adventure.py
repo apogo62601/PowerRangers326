@@ -53,9 +53,21 @@ Args:
  
  Returns: 
   print statement regarding the quality of their day as a string
-  
-  
 """
+
+    if points >= 60:
+        print("It was a good day")
+        
+    if points < 60:
+        print("It was a bad day")
+      
+    bad_choices_set = {"hello", "bye"}
+    
+    good_choices_set = {"hello", "cool", "bye"}
+    
+    total_set = bad_choices_set & good_choices_set
+    
+    
 
 
 def With_Conditions(filepath, condition1):

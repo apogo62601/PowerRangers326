@@ -1,3 +1,5 @@
+import pandas as pd
+
 if __name__ == "__main__":
 
  class Choices:
@@ -41,8 +43,10 @@ RaiseError:
   Error if chosen user option is not valid. Loops back to prior options
   
 """
+with open """akash's file""" as conditions:
 
-
+ for x in """akash's file""":
+  print(f"Your choice is {"""choice"""}, you currently have {"""points"""} points.")
 
 
 

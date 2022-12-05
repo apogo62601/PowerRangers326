@@ -71,6 +71,11 @@ Args:
     
     Counter(points, point_change)
     
+    # List comprehension for finding point amount needed to 
+    threshold_adder = [x+1 for x in bad_choices_set if x < 60]
+    
+    
+    
     
 
 

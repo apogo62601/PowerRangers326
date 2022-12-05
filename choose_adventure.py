@@ -69,6 +69,8 @@ Args:
     
     total_set = bad_choices_set & good_choices_set
     
+    Counter(points, point_change)
+    
     
 
 

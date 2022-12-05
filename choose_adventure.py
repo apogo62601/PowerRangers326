@@ -25,27 +25,6 @@ Returns:
 
 
 
-def __repr__():
-# METHOD: __Repr__ for formal strings
-"""Using magic method to formally represent
-
-Returns: 
-  str: string representation
-"""
-
-def Counter(points, point_change):
-# METHOD: Counter for Points (add/subtract)
-# Abel
-""" Counts the amount of points the user receives.
-Args:
-  points(int): Amount of points the user has.
-  point_change(int): Amount of points the user gains/ loses.
-
-Returns:
-  The sum of points that is awarded to the user as an int.
-"""
-
-
 def Conditional_Choices(Storychoice1, Storychoice2, Storychoice = None):
 # METHOD: Printing prompted if storychoice#1 or storychoice#2 is chosen
 # Aelina
@@ -90,4 +69,26 @@ Args:
 Side effects:
   Prints to stdout
 
+"""
+
+
+
+def __repr__():
+# METHOD: __Repr__ for formal strings
+"""Using magic method to formally represent
+
+Returns: 
+  str: string representation
+"""
+
+def Counter(points, point_change):
+# METHOD: Counter for Points (add/subtract)
+# Abel
+""" Counts the amount of points the user receives.
+Args:
+  points(int): Amount of points the user has.
+  point_change(int): Amount of points the user gains/ loses.
+
+Returns:
+  The sum of points that is awarded to the user as an int.
 """

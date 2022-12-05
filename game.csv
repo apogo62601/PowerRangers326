@@ -5,7 +5,7 @@ take_shower = 5
 not_take_shower = 1-(take_shower)
 
 on_time = 10
-not_on_time = 1-(on_time)
+not_on_time = 5
 
 skip = -85
 class_late = 5
@@ -14,7 +14,7 @@ do_hw = 10
 
 gym = 5
 go_out_after_hw = 5
-go_out_no_hw = -5
+go_out_no_hw = 1-(go_out_after_hw)
 sleep = 15
 stay_out = -15
 sober = 15

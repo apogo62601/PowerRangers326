@@ -1,5 +1,5 @@
-sleep_in = 15
-not_sleep_in = 1-(sleep_in)
+wake_up = 15
+sleep_in = 1-(wake_up)
 
 take_shower = 5
 not_take_shower = 1-(take_shower)

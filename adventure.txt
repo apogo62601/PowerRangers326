@@ -1,0 +1,33 @@
+{
+   "1":{
+      "prompt":"GM",
+      "actions":{
+         "skip":{
+            "location":"2",
+            "points":-10
+         },
+         "wake":{
+            "location":"3",
+            "points":8
+         }
+      }
+   },
+   "2":{
+      "prompt":"slept",
+      "actions":{
+         "doesnt matter":{
+            "location":"1",
+            "points":5
+         }
+      }
+   },
+   "3":{
+      "prompt":"woke up",
+      "actions":{
+         "win":{
+            "location":"1",
+            "points":5
+         }
+      }
+   }
+}

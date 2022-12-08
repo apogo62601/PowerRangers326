@@ -46,7 +46,7 @@
          },
          "Make breakfast":{
             "location":"3",
-            "points":8
+            "points":10
          }
       }
    },
@@ -64,7 +64,7 @@
       "actions":{
          "win":{
             "location":"1",
-            "points":5
+            "points":25
          }
       }
    }
@@ -80,7 +80,7 @@
          "You skipped class and lost much needed points from a pop quiz that was assigned. You failed the class and thus, your day. :(
 		   DAY FAILURE":{
             "location":"3",
-            "points":8
+            "points":-85
          }
       }
    }

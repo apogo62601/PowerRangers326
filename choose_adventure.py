@@ -1,5 +1,8 @@
 import pandas as pd
 
+
+
+#We still need to touch on about 4 more techniques 
 class Player:
   def __init__(self,name):
    self.name = name

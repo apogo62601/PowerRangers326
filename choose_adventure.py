@@ -14,7 +14,7 @@ if __name__ == "__main__":
   
   
   
-def get_points(file, points):
+def get_points(points):
 # METHOD: Reading Points File Data
 # Christian
 """
@@ -26,9 +26,10 @@ Attributes:
 Returns:
   Returns user point value as an int
 """
-  df = pd.read_csv("game.csv")
-  points = df['sleep in'].iloc[0]
-  return points
+  df = pd.read_csv("game_script.csv")
+    points = df['skip class'].iloc[0]
+    return points
+get_points('wake up')
 
 
 

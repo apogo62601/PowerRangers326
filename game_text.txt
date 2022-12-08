@@ -1,7 +1,5 @@
 Would you like to wake up or sleep in?
 
-Will you take a shower this morning?
-
 Breakfast time! Will you be making your own breakfast or go to McDonald's for a breakfast sandwich?
 
 *make your own

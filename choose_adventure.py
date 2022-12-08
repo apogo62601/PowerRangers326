@@ -14,7 +14,11 @@ if __name__ == "__main__":
   
    def __init__(self):
       pass
-  
+
+    
+#This is a bar graph that will show good days, okay days, and bad days
+def days(plot):
+  df.pyplot('days')
   
   
 def get_points(points):

@@ -40,11 +40,11 @@
    "4":{
       "prompt":"Breakfast time! Will you be making your own breakfast or go to McDonald's for a breakfast sandwich?",
       "actions":{
-         "Make Breakfast":{
+         "Go to McDonalds":{
             "location":"2",
             "points":-10
          },
-         "Go to McDonalds":{
+         "Make breakfast":{
             "location":"3",
             "points":8
          }
@@ -68,4 +68,36 @@
          }
       }
    }
+},
+{
+   "7":{
+      "prompt":"You ran into your friend at McDonalds and now you're running late. Will you skip or come to class late?",
+      "actions":{
+         "Go to class late":{
+            "location":"2",
+            "points":-10
+         },
+         "You skipped class and lost much needed points from a pop quiz that was assigned. You failed the class and thus, your day. :(
+		   DAY FAILURE":{
+            "location":"3",
+            "points":8
+         }
+      }
+   }
 }
+
+{
+   "8":{
+      "prompt":"You're done with your classes for the day! Would you like to go out to drink with friends or get some homework done?",
+      "actions":{
+         "":{
+            "location":"2",
+            "points":-10
+         },
+         "Make breakfast":{
+            "location":"3",
+            "points":8
+         }
+      }
+   },
+ 

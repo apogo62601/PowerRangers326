@@ -133,7 +133,8 @@
    },
    {
    "12":{
-      "prompt":"You had a great day! Sleep well!",
+      "prompt":"You had a great day! Sleep well! You woke up the next morning feeling refreshed! You were prepared for a very important job interview that you had. You got the job! Congradulations! :)
+",
       "actions":{
          "win":{
             "location":"1",

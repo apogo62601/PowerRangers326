@@ -1,4 +1,5 @@
 import pandas as pd
+import matplotlib.pyplot as plt
 import json
 
 
@@ -54,8 +55,11 @@ if __name__ == "__main__":
 
     
 #This is a bar graph that will show good days, okay days, and bad days
-def days(plot):
-  df.pyplot('days')
+def points_graph(graph):
+    df = pd.read_csv("game_points.csv")
+    graph = df.plot.bar(y ='points')
+    return graph
+points_graph('points')
   
   
 def get_points(points):
@@ -73,7 +77,7 @@ Returns:
   df = pd.read_csv("game_script.csv")
     points = df['skip class'].iloc[0]
     return points
-get_points('wake up')
+get_points('skip class')
 
 
 

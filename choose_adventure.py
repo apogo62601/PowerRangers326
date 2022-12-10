@@ -55,6 +55,7 @@ if __name__ == "__main__":
 
     
 #This is a bar graph that will show good days, okay days, and bad days
+#Christian
 def points_graph(graph):
     df = pd.read_csv("game_points.csv")
     graph = df.plot.bar(y ='points')
@@ -63,6 +64,7 @@ points_graph('points')
 
 
 #This is a filter of only positive points
+#Christian
 def good_points(pos_points):
     df = pd.read_csv("game_points.csv")
     pos_points = df[df['points'] > 0]

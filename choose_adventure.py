@@ -146,15 +146,14 @@ Side effects:
 
 """
 
-
-
-def __repr__():
-# METHOD: __Repr__ for formal strings
-"""Using magic method to formally represent
-
-Returns: 
-  str: string representation
-"""
+def __repr__(self):
+    #METHOD: __repr__ for formal string representation
+    """Using magic method to formally represent the player's points.
+    
+    Returns:
+    str: string representation of player points.
+    """
+	return f”Player({self.points})”
 
 def Counter(points, point_change):
 # METHOD: Counter for Points (add/subtract)

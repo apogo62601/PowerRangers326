@@ -12,7 +12,7 @@ class player:
         self.name = ""
         
     def setName(self):
-        self.name = input("What is ur name? ")
+        self.name = input("What is your name? ")
         
         
 

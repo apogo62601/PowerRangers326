@@ -60,7 +60,17 @@ def points_graph(graph):
     graph = df.plot.bar(y ='points')
     return graph
 points_graph('points')
-  
+
+
+#This is a filter of only positive points
+def good_points(pos_points):
+    df = pd.read_csv("game_points.csv")
+    pos_points = df[df['points'] > 0]
+    return pos_points
+good_points('pos_points')
+
+
+
   
 def get_points(points):
 # METHOD: Reading Points File Data

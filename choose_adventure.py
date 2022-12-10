@@ -62,9 +62,9 @@ RaiseError:
   Error if chosen user option is not valid. Loops back to prior options
   
 """
-with open """akash's file""" as conditions:
+with open("adventure.txt") as file:
 
- for x in """akash's file""":
+ for x in file:
   print(f"Your choice is {"""choice"""}, you currently have {"""points"""} points.")
 
 

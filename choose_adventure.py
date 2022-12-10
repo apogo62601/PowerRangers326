@@ -12,14 +12,6 @@ class player:
         
     def setName(self):
         self.name = input("What is ur name? ")
- 
-  
-if __name__ == "__main__":
-
- class Choices:
-  
-   def __init__(self):
-      pass
 
     
 #This is a bar graph that will show good days, okay days, and bad days
@@ -151,14 +143,14 @@ if __name__ == "__main__":
     while answer.lower() != "quit":
         while viable == False:
             print(exampleDict[curPlayer.position]["prompt"])
-            print("your options are ")
+            print("Your options are: ")
             for x in list(exampleDict[curPlayer.position]["actions"].keys()):
                 print(x)
-            answer = input("what would you like to do? ").lower()
+            answer = input("What would you like to do?: ").lower()
             if answer.lower() in list(exampleDict[curPlayer.position]["actions"].keys()) or answer.lower() == "quit":
                 viable = True
             else:
-                print("that is not a valid option")
+                print("---------------THAT IS NOT A VALID ANSWER---------------")
         if answer.lower() == "quit":
             break
         curPlayer.log.append(answer)

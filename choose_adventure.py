@@ -26,18 +26,18 @@ if __name__ == "__main__":
     curPlayer.setName()
     answer = ""
     viable = False
-    while answer.lower() != "quit":
+    while answer != "quit":
         while viable == False:
             print(exampleDict[curPlayer.position]["prompt"])
             print("Your options are: ")
             for x in list(exampleDict[curPlayer.position]["actions"].keys()):
                 print(x)
-            answer = input("What would you like to do?: ").lower()
-            if answer.lower() in list(exampleDict[curPlayer.position]["actions"].keys()) or answer.lower() == "quit":
+            answer = input("What would you like to do?: ")
+            if answer in list(exampleDict[curPlayer.position]["actions"].keys()) or answer == "quit":
                 viable = True
             else:
                 print("---------------THAT IS NOT A VALID ANSWER---------------")
-        if answer.lower() == "quit":
+        if answer == "quit":
             break
         curPlayer.log.append(answer)
         print(curPlayer.log)

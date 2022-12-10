@@ -124,7 +124,7 @@
    },
    {
    "11":{
-      "prompt":"You stayed out too late and drank too much! You drunk texted your ex and told them you still love. The feeling was not mutual. On top of that, you woke up hungover and missed you very important interview and lost the job opporunity. You lost all motivation in life and cried yourself to sleep every night after that.",
+      "prompt":"You stayed out too late and drank too much! You drunk texted your ex and told them you still love them. The feeling was not mutual. On top of that, you woke up hungover and missed your very important interview and lost the job opporunity. You lost all motivation in life and cried yourself to sleep every night after that. :(",
       "actions":{
          DAY FAILURE":{
             "location":"1",

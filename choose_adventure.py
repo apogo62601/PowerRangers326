@@ -12,6 +12,44 @@ class player:
         
     def setName(self):
         self.name = input("What is ur name? ")
+        
+        
+
+        
+if __name__ == "__main__":
+# Interprets JSON dictionary file
+# Justin
+    with open('/Users/home/Desktop/326Homework/adventure.txt') as f:
+        exampleDict = json.load(f)
+    curPlayer = player()
+    curPlayer.setName()
+    answer = ""
+    viable = False
+    while answer.lower() != "quit":
+        while viable == False:
+            print(exampleDict[curPlayer.position]["prompt"])
+            print("Your options are: ")
+            for x in list(exampleDict[curPlayer.position]["actions"].keys()):
+                print(x)
+            answer = input("What would you like to do?: ").lower()
+            if answer.lower() in list(exampleDict[curPlayer.position]["actions"].keys()) or answer.lower() == "quit":
+                viable = True
+            else:
+                print("---------------THAT IS NOT A VALID ANSWER---------------")
+        if answer.lower() == "quit":
+            break
+        curPlayer.log.append(answer)
+        print(curPlayer.log)
+        print(curPlayer.points)
+        curPlayer.points += exampleDict[curPlayer.position]["actions"][answer]["points"]
+        curPlayer.position = exampleDict[curPlayer.position]["actions"][answer]["location"]
+        viable = False
+        
+
+        
+
+        
+
 
     
 #This is a bar graph that will show good days, okay days, and bad days
@@ -128,34 +166,3 @@ Args:
 Returns:
   The sum of points that is awarded to the user as an int.
 """
-
-
-
-if __name__ == "__main__":
-# Interprets JSON dictionary file
-# Justin
-    with open('/Users/home/Desktop/326Homework/adventure.txt') as f:
-        exampleDict = json.load(f)
-    curPlayer = player()
-    curPlayer.setName()
-    answer = ""
-    viable = False
-    while answer.lower() != "quit":
-        while viable == False:
-            print(exampleDict[curPlayer.position]["prompt"])
-            print("Your options are: ")
-            for x in list(exampleDict[curPlayer.position]["actions"].keys()):
-                print(x)
-            answer = input("What would you like to do?: ").lower()
-            if answer.lower() in list(exampleDict[curPlayer.position]["actions"].keys()) or answer.lower() == "quit":
-                viable = True
-            else:
-                print("---------------THAT IS NOT A VALID ANSWER---------------")
-        if answer.lower() == "quit":
-            break
-        curPlayer.log.append(answer)
-        print(curPlayer.log)
-        print(curPlayer.points)
-        curPlayer.points += exampleDict[curPlayer.position]["actions"][answer]["points"]
-        curPlayer.position = exampleDict[curPlayer.position]["actions"][answer]["location"]
-        viable = False

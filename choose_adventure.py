@@ -14,6 +14,15 @@ class player:
         
     def setName(self):
         self.name = input("What is your name? ")
+	
+    def __repr__(self):
+    	#METHOD: __repr__ for formal string representation
+    	"""Using magic method to formally represent the player's points.
+    
+    	Returns:
+    	str: string representation of player points.
+    	"""
+	return f”Player({self.points})”
         
         
 
@@ -161,15 +170,6 @@ Side effects:
   Prints to stdout
 
 """
-
-def __repr__(self):
-    #METHOD: __repr__ for formal string representation
-    """Using magic method to formally represent the player's points.
-    
-    Returns:
-    str: string representation of player points.
-    """
-	return f”Player({self.points})”
 
 def Counter(points, point_change):
 # METHOD: Counter for Points (add/subtract)

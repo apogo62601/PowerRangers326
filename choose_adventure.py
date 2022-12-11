@@ -1,6 +1,8 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import json
+from argparse import ArgumentParser
+import sys
 
 
 
@@ -24,10 +26,9 @@ class player:
     	"""
 	return f”Player({self.points})”
         
-        
+       
 
-        
-if __name__ == "__main__":
+def main():
 # Interprets JSON dictionary file
 # Justin
     with open('/Users/home/Desktop/326Homework/adventure.txt') as f:
@@ -56,12 +57,6 @@ if __name__ == "__main__":
         curPlayer.position = exampleDict[curPlayer.position]["actions"][answer]["location"]
         viable = False
         
-
-        
-
-        
-
-
     
 #This is a bar graph that will show good days, okay days, and bad days
 #Christian
@@ -79,7 +74,6 @@ def good_points(pos_points):
     pos_points = df[df['points'] > 0]
     return pos_points
 good_points('pos_points')
-
 
 
   
@@ -154,22 +148,6 @@ Args:
     threshold_adder = [x+1 for x in bad_choices_set if x < 60]
     
     
-    
-    
-
-
-def With_Conditions(filepath, condition1):
-# METHOD: Open text file (.txt) with prompts and then put conditions in based on user picks
-# Akash
-"""
-Args:
-  path(str): file path to text prompts
-  condition1(str): condition user picks
-
-Side effects:
-  Prints to stdout
-
-"""
 
 def Counter(points, point_change):
 # METHOD: Counter for Points (add/subtract)
@@ -182,3 +160,15 @@ Args:
 Returns:
   The sum of points that is awarded to the user as an int.
 """
+
+def parse_args(arglist):
+#METHOD: Creates command-line interface for the user
+#Akash
+	parser = ArgumentParser()
+	parser.add_argument("file", help = "file of names and numbers")
+	return parser.parse_args(arglist)
+
+if __name__ == "__main__":
+#Akash
+	args = parse_args(sys.argv[1:])
+	main(args.file)

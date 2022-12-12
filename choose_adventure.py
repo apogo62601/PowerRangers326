@@ -9,9 +9,6 @@ import sys
  
 class Player:
 	
-	A class to represent Player 1
-	points 
-	
     def __init__(self):
         self.points = 0
         self.position = "1"
@@ -50,7 +47,7 @@ def main():
     	while viable == False:
 		#Use a list comprehension to create a list of options
 		options = [option for option in exampleDict[ curPlayer.position]["actions"].keys()]
-		print(exampleDict[curplayer.position]['prompt'])
+		print(exampleDict[curPlayer.position]['prompt'])
 		print("Your options are:")
 		#Use for loop to display each option on its own line
 		for option in options:

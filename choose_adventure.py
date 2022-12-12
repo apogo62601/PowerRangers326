@@ -19,12 +19,6 @@ class Player:
         self.name = input("What is your name? ")
 	
     def __repr__(self):
-    	#METHOD: __repr__ for formal string representation
-    	"""Using magic method to formally represent the player's points.
-    
-    	Returns:
-    	str: string representation of player points.
-    	"""
 	return f"Player(name={self.name}, points={self.points}, position={self.position}, log={self.log})"
 
 class Player2(Player):
@@ -41,11 +35,9 @@ def main(filename):
     viable = False
     while answer != "quit":
         while viable == False:
-            # Use a list comprehension to create a list of options
             options = [option for option in exampleDict[curPlayer.position]["actions"].keys()]
             print(exampleDict[curPlayer.position]['prompt'])
             print("Your options are:")
-            # Use a for loop to display each option on its own line
             for option in options:
                 print(option)
             answer = input("What would you like to do?: ")

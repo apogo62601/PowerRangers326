@@ -6,7 +6,7 @@ import sys
 
 
 
-#We still need to touch on about 4 more techniques 
+ 
 class player:
     def __init__(self):
         self.points = 0
@@ -25,6 +25,24 @@ class player:
     	str: string representation of player points.
     	"""
 	return f”Player({self.points})”
+
+class player2(player):
+    def __init__(self):
+        self.points = 0
+        self.position = "1"
+        self.log = []
+        self.name = ""
+        super().__init__(player2)
+    def p2Name(self):
+        self.name = input("What is your name? ")
+    def __repr__(self):
+    	#METHOD: __repr__ for formal string representation
+    	"""Using magic method to formally represent the player's points.
+    
+    	Returns:
+    	str: string representation of player points.
+    	"""
+return f"Player({self.points})"
         
        
 

@@ -42,7 +42,12 @@ def main():
 	options = [option for option in exampleDict[ curPlayer.position]["actions"].keys()]
 	print(exampleDict[curplayer.position]['prompt'])
 	print("Your options are:")
-	
+	#Use for loop to display each option on its own line
+	for option in options:
+		print(option)
+	answer = input("What would you like to do?: ")
+	if answer in options or answer == "quit":
+		viable = True
             else:
                 print("---------------THAT IS NOT A VALID ANSWER---------------")
         if answer == "quit":

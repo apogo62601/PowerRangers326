@@ -8,6 +8,12 @@ import sys
 
  
 class Player:
+	""" A class for Player 1.
+    Returns:
+        str: The name of the player
+        list: record of choices players make
+        int: points the user has scored
+        """
     def __init__(self):
         self.points = 0
         self.position = "1"

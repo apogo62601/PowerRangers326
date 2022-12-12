@@ -24,7 +24,7 @@ class player:
     	Returns:
     	str: string representation of player points.
     	"""
-	return f”Player({self.points})”
+	return f"Player(name={self.name}, points={self.points}, position={self.position}, log={self.log})"
 
 class player2(player):
     def __init__(self):

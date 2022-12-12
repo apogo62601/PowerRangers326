@@ -8,7 +8,7 @@ import sys
 
  
 class Player:
-	"""
+	
 	A class to represent Player 1
 	points 
 	

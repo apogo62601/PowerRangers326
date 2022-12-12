@@ -57,14 +57,14 @@ def main():
 			viable = True
             	else:
                 	print("---------------THAT IS NOT A VALID ANSWER---------------")
-        	if answer == "quit":
-            		break
-        	curPlayer.log.append(answer)
-        	print(curPlayer.log)
-        	print(curPlayer.points)
-        	curPlayer.points += exampleDict[curPlayer.position]["actions"][answer]["points"]
-        	curPlayer.position = exampleDict[curPlayer.position]["actions"][answer]["location"]
-        	viable = False
+        if answer == "quit":
+            	break
+        curPlayer.log.append(answer)
+        print(curPlayer.log)
+        print(curPlayer.points)
+        curPlayer.points += exampleDict[curPlayer.position]["actions"][answer]["points"]
+        curPlayer.position = exampleDict[curPlayer.position]["actions"][answer]["location"]
+        viable = False
         
     
 #This is a bar graph that will show good days, okay days, and bad days

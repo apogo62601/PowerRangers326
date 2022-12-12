@@ -118,6 +118,14 @@ get_points('skip class')
 def parse_args(arglist):
 #METHOD: Creates command-line interface for the user
 #Akash
+"""Establishes Python script from command line interface for the user to easily follow prompts and input answer.
+
+Attributes:
+	arglist(obj): 
+	
+Returns:
+	Converted command line input into Python script.
+"""
 	parser = ArgumentParser()
 	parser.add_argument("file", help = "file of names and numbers")
 	return parser.parse_args(arglist)

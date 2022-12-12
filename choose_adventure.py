@@ -55,7 +55,7 @@ def main():
     curPlayer.setName()
     answer = ""
     viable = False
-    while variable == False:
+    while viaable == False:
 	#Use a list comprehension to create a list of options
 	options = [option for option in exampleDict[ curPlayer.position]["actions"].keys()]
 	print(exampleDict[curplayer.position]['prompt'])

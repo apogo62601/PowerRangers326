@@ -42,25 +42,26 @@ def main():
 # Justin
     with open('/Users/home/Desktop/326Homework/adventure.txt') as f:
         exampleDict = json.load(f)
-    curPlayer = player()
+    curPlayer = Player()
     curPlayer.setName()
     answer = ""
     viable = False
-    while viable == False:
-	#Use a list comprehension to create a list of options
-	options = [option for option in exampleDict[ curPlayer.position]["actions"].keys()]
-	print(exampleDict[curplayer.position]['prompt'])
-	print("Your options are:")
-	#Use for loop to display each option on its own line
-	for option in options:
-		print(option)
-	answer = input("What would you like to do?: ")
-	if answer in options or answer == "quit":
-		viable = True
-            else:
-                print("---------------THAT IS NOT A VALID ANSWER---------------")
+    while answer != "quit"
+    	while viable == False:
+		#Use a list comprehension to create a list of options
+		options = [option for option in exampleDict[ curPlayer.position]["actions"].keys()]
+		print(exampleDict[curplayer.position]['prompt'])
+		print("Your options are:")
+		#Use for loop to display each option on its own line
+		for option in options:
+			print(option)
+		answer = input("What would you like to do?: ")
+		if answer in options or answer == "quit":
+			viable = True
+            	else:
+                	print("---------------THAT IS NOT A VALID ANSWER---------------")
         if answer == "quit":
-            break
+            	break
         curPlayer.log.append(answer)
         print(curPlayer.log)
         print(curPlayer.points)

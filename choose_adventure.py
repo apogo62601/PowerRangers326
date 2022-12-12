@@ -8,6 +8,10 @@ import sys
 
  
 class Player:
+	"""
+	A class to represent Player 1
+	points 
+	
     def __init__(self):
         self.points = 0
         self.position = "1"

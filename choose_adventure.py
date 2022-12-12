@@ -7,7 +7,7 @@ import sys
 
 
  
-class player:
+class Player:
     def __init__(self):
         self.points = 0
         self.position = "1"
@@ -26,13 +26,10 @@ class player:
     	"""
 	return f"Player(name={self.name}, points={self.points}, position={self.position}, log={self.log})"
 
-class player2(player):
+class Player2(Player):
     def __init__(self):
-        self.points = 0
-        self.position = "1"
-        self.log = []
-        self.name = ""
-        super().__init__(player2)
+        super().__init__()
+	
     def p2Name(self):
         self.name = input("What is your name? ")
     def __repr__(self):

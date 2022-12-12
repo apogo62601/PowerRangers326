@@ -8,7 +8,6 @@ import sys
 
  
 class Player:
-	
     def __init__(self):
         self.points = 0
         self.position = "1"
@@ -55,8 +54,6 @@ def main(filename):
         viable = False
         
     
-#This is a bar graph that will show good days, okay days, and bad days
-#Christian
 def points_graph(graph):
     df = pd.read_csv("game_points.csv")
     graph = df.plot.bar(y ='points')
@@ -64,8 +61,6 @@ def points_graph(graph):
 points_graph('points')
 
 
-#This is a filter of only positive points
-#Christian
 def good_points(pos_points):
     df = pd.read_csv("game_points.csv")
     pos_points = df[df['points'] > 0]
@@ -75,8 +70,6 @@ good_points('pos_points')
 
   
 def get_points(points):
-# METHOD: Reading Points File Data
-# Christian
 """
 Args:
   csv_file(str): csv file
@@ -96,8 +89,6 @@ get_points('skip class')
 
 
 def parse_args(arglist):
-#METHOD: Creates command-line interface for the user
-#Akash
 """Establishes Python script from command line interface for the user to easily follow prompts and input answer.
 
 Attributes:
@@ -111,6 +102,5 @@ Returns:
 	return parser.parse_args(arglist)
 
 if __name__ == "__main__":
-#Akash
 	args = parse_args(sys.argv[1:])
-	main(args.file)
+	main("adventure.txt")

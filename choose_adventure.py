@@ -15,12 +15,17 @@ class Player:
         int: points the user has scored
         """
     def __init__(self):
+	""" Assigns attributes to Player
+	"""
         self.points = 0
         self.position = "1"
         self.log = []
         self.name = ""
         
     def setName(self)
+	""" 
+	
+	Side effects: Prompts user for Player name"""
         self.name = input("What is your name? ")
 	
     def __repr__(self):

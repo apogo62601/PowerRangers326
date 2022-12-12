@@ -21,17 +21,30 @@ class Player:
         self.name = ""
         
     def setName(self):
+	""" Gets users name
+	
+	"""
         self.name = input("What is your name? ")
 	
     def __repr__(self):
+	
 	return f"Player(name={self.name}, points={self.points}, position={self.position}, log={self.log})"
 
 class Player2(Player):
+	""" Child of Player class
+        """
     def __init__(self):
+	""" Initializes Player 2"""
         super().__init__()
 	
 
 def main(filename):
+	""" Path to file with user choices.
+	Args:
+        filename(str): Path to text file with prompts for the player to choose from
+	Side effects:
+		Begins game for user and presents them with prompts
+    """
     with open(filename) as f:
         exampleDict = json.load(f)
     curPlayer = Player()
@@ -61,6 +74,7 @@ def main(filename):
         
     
 def points_graph(graph):
+	
     df = pd.read_csv("game_points.csv")
     graph = df.plot.bar(y ='points')
     return graph

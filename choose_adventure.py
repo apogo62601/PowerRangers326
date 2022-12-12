@@ -81,37 +81,24 @@ def main(filename):
         viable = False
         
     
-def points_graph(graph):
-	
+def points_graph(points):
     df = pd.read_csv("game_points.csv")
-    graph = df.plot.bar(y ='points')
-    return graph
+    df.plot.bar(y =points)
+    plt.show()
 points_graph('points')
-
 
 def good_points(pos_points):
     df = pd.read_csv("game_points.csv")
     pos_points = df[df['points'] > 0]
     return pos_points
+print(good_points('pos_points'))
 good_points('pos_points')
 
-
-  
 def get_points(points):
-"""
-Args:
-  csv_file(str): csv file
-
-Attributes:
-  
-Returns:
-  Returns user point value as an int
-"""
-  df = pd.read_csv("game_script.csv")
-    points = df['skip class'].iloc[0]
-    return points
+    df = pd.read_csv("game_script.csv")
+    return df[points].iloc[0]
+print(get_points('skip class'))
 get_points('skip class')
-
 
 
 

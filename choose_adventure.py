@@ -31,34 +31,30 @@ class Player2(Player):
     def __init__(self):
         super().__init__()
 	
-        
-       
 
-def main():
-# Interprets JSON dictionary file
-# Justin
-    with open('/Users/home/Desktop/326Homework/adventure.txt') as f:
+def main(filename):
+    with open(filename) as f:
         exampleDict = json.load(f)
     curPlayer = Player()
     curPlayer.setName()
     answer = ""
     viable = False
     while answer != "quit":
-    	while viable == False:
-		#Use a list comprehension to create a list of options
-		options = [option for option in exampleDict[ curPlayer.position]["actions"].keys()]
-		print(exampleDict[curPlayer.position]['prompt'])
-		print("Your options are:")
-		#Use for loop to display each option on its own line
-		for option in options:
-			print(option)
-		answer = input("What would you like to do?: ")
-		if answer in options or answer == "quit":
-			viable = True
-            	else:
-                	print("---------------THAT IS NOT A VALID ANSWER---------------")
-        if answer == "quit":
-            	break
+        while viable == False:
+            # Use a list comprehension to create a list of options
+            options = [option for option in exampleDict[curPlayer.position]["actions"].keys()]
+            print(exampleDict[curPlayer.position]['prompt'])
+            print("Your options are:")
+            # Use a for loop to display each option on its own line
+            for option in options:
+                print(option)
+            answer = input("What would you like to do?: ")
+            if answer in options or answer == "quit":
+                viable = True
+            else:
+                print("---------------THAT IS NOT A VALID ANSWER---------------")
+        if answer.lower() == "quit":
+            break
         curPlayer.log.append(answer)
         print(curPlayer.log)
         print(curPlayer.points)

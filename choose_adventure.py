@@ -20,10 +20,7 @@ class Player:
         self.log = []
         self.name = ""
         
-    def setName(self):
-	""" Gets users name
-	
-	"""
+    def setName(self)
         self.name = input("What is your name? ")
 	
     def __repr__(self):

@@ -24,7 +24,13 @@ class Player:
         self.name = input("What is your name? ")
 	
     def __repr__(self):
+	"""Creates formal representation of the user's attributes. Includes the user's name, number of points, their position in the game, and log of points.
 	
+	Arguments:
+		self(str): player attributes.
+	Returns:
+		Formal represenation of attributes as a string.
+	"""
 	return f"Player(name={self.name}, points={self.points}, position={self.position}, log={self.log})"
 
 class Player2(Player):
@@ -106,10 +112,10 @@ get_points('skip class')
 
 
 def parse_args(arglist):
-"""Establishes Python script from command line interface for the user to easily follow prompts and input answer.
+"""Parses command-line arguments from the user input.
 
-Attributes:
-	arglist(obj): 
+Arguments:
+	arglist(str): command-line argument
 	
 Returns:
 	Converted command line input into Python script.

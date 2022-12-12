@@ -82,12 +82,27 @@ def main(filename):
         
     
 def points_graph(points):
+    """A bar graph that will show different choices and points associated
+
+    Args:
+        points (str): string of points from csv
+    Side effect:
+        Shows bar graph
+    """
     df = pd.read_csv("game_points.csv")
     df.plot.bar(y =points)
     plt.show()
 points_graph('points')
 
 def good_points(pos_points):
+    """Uses pandas filtering to filter only positive points
+
+    Args:
+        pos_points (str): string of good points from dataframe
+
+    Returns:
+        pos_points: string of only positive points
+    """
     df = pd.read_csv("game_points.csv")
     pos_points = df[df['points'] > 0]
     return pos_points
@@ -95,12 +110,19 @@ print(good_points('pos_points'))
 good_points('pos_points')
 
 def get_points(points):
+    """This function gets points from a csv
+
+
+    Args:
+        points (str): string of points from csv
+
+    Returns:
+        points: points associated with user selection
+    """
     df = pd.read_csv("game_script.csv")
     return df[points].iloc[0]
 print(get_points('skip class'))
 get_points('skip class')
-
-
 
 
 def parse_args(arglist):

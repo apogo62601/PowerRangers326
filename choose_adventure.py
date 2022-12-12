@@ -22,7 +22,7 @@ class Player:
         self.log = []
         self.name = ""
         
-    def setName(self)
+    def setName(self):
 	""" 
 	
 	Side effects: Prompts user for Player name"""

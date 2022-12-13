@@ -8,14 +8,23 @@ import sys
 
  
 class Player:
-	""" A class for Player 1.
-    Returns:
-        str: The name of the player
-        list: record of choices players make
-        int: points the user has scored
+""" A class for Player 1.
+    Atributes:
+        points (int): The default amount of points to be added to for each choice made
+	position (int): The player's position in the branching story paths
+	log (list): A history where each player choice is saved
+	name (str): An empty string for players to enter their names
         """
     def __init__(self):
 	""" Assigns attributes to Player
+	Atributes:
+        	points (int): The default amount of points to be added to for each choice made
+		position (int): The player's position in the branching story paths
+		log (list): A history where each player choice is saved
+		name (str): An empty string for players to enter their names
+		
+	Side effects:
+		creates global variables to stdout
 	"""
         self.points = 0
         self.position = "1"
@@ -23,9 +32,11 @@ class Player:
         self.name = ""
         
     def setName(self):
-	""" 
+	""" Establishes player name based on input
 	
-	Side effects: Prompts user for Player name"""
+	Side effects:
+		Prompts user for Player name
+	"""
         self.name = input("What is your name? ")
 	
     def __repr__(self):
@@ -47,12 +58,12 @@ class Player2(Player):
 	
 
 def main(filename):
-	""" Path to file with user choices.
+""" Path to file with user choices.
 	Args:
-        filename(str): Path to text file with prompts for the player to choose from
+        	filename(str): Path to text file "adventure.txt" with prompts for the player to choose from
 	Side effects:
-		Begins game for user and presents them with prompts
-    """
+		begins game for user and presents them with prompts
+		"""
     with open(filename) as f:
         exampleDict = json.load(f)
     curPlayer = Player()
@@ -95,7 +106,7 @@ def points_graph(points):
 points_graph('points')
 
 def good_points(pos_points):
-    """Uses pandas filtering to filter only positive points
+"""Uses pandas filtering to filter only positive points
 
     Args:
         pos_points (str): string of good points from dataframe
@@ -110,8 +121,7 @@ print(good_points('pos_points'))
 good_points('pos_points')
 
 def get_points(points):
-    """This function gets points from a csv
-
+"""This function gets points from a csv
 
     Args:
         points (str): string of points from csv
@@ -128,16 +138,18 @@ get_points('skip class')
 def parse_args(arglist):
 """Parses command-line arguments from the user input.
 
-Arguments:
+   Args:
 	arglist(str): command-line argument
 	
-Returns:
+   Returns:
 	Converted command line input into Python script.
-"""
+   """
 	parser = ArgumentParser()
-	parser.add_argument("file", help = "file of names and numbers")
+	parser.add_argument("file", help = "JSON file of branching choices/points/prompts")
 	return parser.parse_args(arglist)
 
 if __name__ == "__main__":
-	args = parse_args(sys.argv[1:])
-	main("adventure.txt")
+	args = parse_args(sys.argv)
+	main("adventure.txt") # If this does not work, use full path to file
+			      # Example: "/Users/home/Desktop/326Homework/adventure.txt"
+			      # Make sure text file is in same directory as this script
